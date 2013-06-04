@@ -1,0 +1,6 @@
+*.back
+*.class
+*.pyc
+*.pyo
+.project
+.pydevproject
