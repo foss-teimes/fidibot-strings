@@ -1,14 +1,22 @@
 {
     "I don't understand %s": [
-        "I don't understand %s"
+        "I don't understand %s",
+        "Den mpanizw apo %s",
+        "Ti n' touto to %s pou thes, eipame?"
     ],
     "Someone talking about me? Duh!": [
-        "Someone talking about me? Duh!"
+        "Someone talking about me? Duh!",
+        "Re ton malaka pali gia mena milaei",
+        "Ti thes re?"
     ],
     "Welcome %s": [
-        "Welcome %s"
+        "Welcome %s",
+        "Kalws irthes sto kanali mas %s",
+        "Re kalws ta op mas ta dyo!!! Ti paizei %s?",
+        "O HI %s!"
     ],
     "You don't have to call me by name in private": [
-        "You don't have to call me by name in private"
+        "You don't have to call me by name in private",
+        "Min les to onoma mou, ntrepomai"
     ]
 }

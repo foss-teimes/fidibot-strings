@@ -6,9 +6,11 @@
         "I'll be back!"
     ],
     "There's nothing to echo": [
-        "There's nothing to echo"
+        "There's nothing to echo",
+        "Den mou les kai ti theleis na pw?"
     ],
     "There's nothing to say": [
-        "There's nothing to say"
+        "There's nothing to say",
+        "Ti einai i zwi, ti einai o anthrwpos, ti thes na pw?"
     ]
 }
