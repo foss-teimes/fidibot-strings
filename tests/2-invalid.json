@@ -1,0 +1,7 @@
+{
+    'Welcome %s': [
+        "Welcome %s",
+        "Hello %s",
+        "How YA doing %s"
+    ]
+}
