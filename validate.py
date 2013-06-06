@@ -5,7 +5,6 @@
 import sys
 import json
 import shutil
-import os.path
 import argparse
 
 
@@ -20,6 +19,40 @@ def get_args():
     return parser.parse_args()
 
 
+class ParameterMissmatchError(TypeError):
+    pass
+
+def count_fmt_params(string):
+    """Count the number of parameters the string accepts"""
+    string = string.replace("%%", "")
+    return len(string.split("%")) - 1
+
+def check_format_strs(str_dict):
+    """
+    Check for format parameter mismatch
+    
+    Check that each alternative in each key has
+    the same number of format parameters as the key
+    """
+    error_fewer = 'Key "%s" has fewer parameters than alternative "%s"'
+    error_more = 'Key "%s" has more parameters than alternative "%s"'
+    errors_held = []
+    # scan dictionary for missmatches
+    for key, str_list in str_dict.iteritems():
+        key_params = count_fmt_params(key)
+        for alt_fmt_str in str_list:
+            alt_params = count_fmt_params(alt_fmt_str)
+            if key_params < alt_params:
+                errors_held.append(error_fewer % (key, alt_fmt_str))
+            elif key_params > alt_params:
+                errors_held.append(error_more % (key, alt_fmt_str))
+    if errors_held:
+        # prepare and send an exception with all the errors
+        e = ParameterMissmatchError("Parameter Missmatch(es)")
+        e.errors = errors_held
+        raise e
+
+
 def main():
     args = get_args()
     
@@ -31,12 +64,18 @@ def main():
         try:
             fp = open(filename)
             files_dict[filename] = json.load(fp)
+            check_format_strs(files_dict[filename])
             print "PASS: %s" % (filename)
         except IOError as e:
             raise SystemExit(e)
         except ValueError as e:
             exceptions[filename] = e
             print >> sys.stderr, "FAIL: %s -- %s" % (filename, e)
+        except ParameterMissmatchError as e:
+            exceptions[filename] = e
+            print >> sys.stderr, "MISS: %s -- %s" % (filename, e)
+            for err in e.errors:
+                print >> sys.stderr, "\t%s" % err
         finally:
             fp.close()
     if exceptions:
