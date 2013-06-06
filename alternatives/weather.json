@@ -1,0 +1,14 @@
+{
+    "Error retrieving data: %s": [
+        "Error retrieving data: %s"
+    ],
+    "Fair": [
+        "Pena",
+        "Finos",
+        "Liakada",
+        "Liakada gia frapedoumpa"
+    ],
+    "The Temperature is %s\\nThe Weather is %s\\nNafpaktos %s": [
+        "The Temperature is %s\\nThe Weather is %s\\nNafpaktos %s"
+    ]
+}
