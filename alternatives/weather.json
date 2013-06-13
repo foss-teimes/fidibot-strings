@@ -4,9 +4,11 @@
     ],
     "Fair": [
         "Pena",
-        "Finos",
-        "Liakada",
-        "Liakada gia frapedoumpa"
+        "Finos"
+    ],
+    "Partly Cloudy": [
+        "Ligaki synnefiasmenos",
+        "Oligon mpountouxla"
     ],
     "The Temperature is %s\\nThe Weather is %s\\nNafpaktos %s": [
         "The Temperature is %s\\nThe Weather is %s\\nNafpaktos %s"

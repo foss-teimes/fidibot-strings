@@ -15,6 +15,11 @@
         "Re kalws ta op mas ta dyo!!! Ti paizei %s?",
         "O HI %s!"
     ],
+    "Why did you kick me, %s?": [
+        "Why did you kick me, %s?",
+        "Poios %s me kickare?",
+        "*Sikwnei to kefali apo tin laspi* Atime %s!"
+    ],
     "You don't have to call me by name in private": [
         "You don't have to call me by name in private",
         "Min les to onoma mou, ntrepomai"
