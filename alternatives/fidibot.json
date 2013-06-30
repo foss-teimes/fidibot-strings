@@ -1,8 +1,14 @@
 {
+    "I crashed damn it!": [
+        "I crashed damn it!"
+    ],
     "I don't understand %s": [
         "I don't understand %s",
         "Den mpanizw apo %s",
         "Ti n' touto to %s pou thes, eipame?"
+    ],
+    "Someone closed me!": [
+        "Someone closed me!"
     ],
     "Someone talking about me? Duh!": [
         "Someone talking about me? Duh!",
