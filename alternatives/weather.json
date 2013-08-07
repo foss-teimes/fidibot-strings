@@ -10,7 +10,7 @@
         "Ligaki synnefiasmenos",
         "Oligon mpountouxla"
     ],
-    "The Temperature is %s\\nThe Weather is %s\\nNafpaktos %s": [
-        "H thermokrasia einai %s\\nO kairos einai %s\\nNafpaktos - %s"
+    "The Temperature is %s\nThe Weather is %s\nNafpaktos %s": [
+        "H thermokrasia einai %s\nO kairos einai %s\nNafpaktos - %s"
     ]
 }
