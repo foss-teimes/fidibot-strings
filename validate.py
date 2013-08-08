@@ -90,8 +90,9 @@ def main():
             shutil.copy2(filename, filename+".back")
         try:
             fp = open(filename, 'w')
-            json.dump(files_dict[filename], fp,
+            js_str = json.dumps(files_dict[filename], fp, ensure_ascii=False,
                       sort_keys=True, indent=4, separators=(',', ': '))
+            fp.write(js_str.encode("utf-8"))
             fp.write("\n")
             print "%s" % (filename)
         except IOError as e:
