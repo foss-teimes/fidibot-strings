@@ -1,0 +1,35 @@
+{
+    "Critical Fail!": [
+        "Critical Fail!"
+    ],
+    "Critical Hit!": [
+        "Critical Hit!"
+    ],
+    "Critical Miss!": [
+        "Critical Miss!"
+    ],
+    "Critical Save!": [
+        "Critical Save!"
+    ],
+    "DM: Read The Freaking PHB": [
+        "DM: Read The Freaking PHB"
+    ],
+    "DM: You cannot %s": [
+        "DM: You cannot %s"
+    ],
+    "You Fail": [
+        "You Fail"
+    ],
+    "You Hit": [
+        "You Hit"
+    ],
+    "You Miss": [
+        "You Miss"
+    ],
+    "You Save": [
+        "You Save"
+    ],
+    "You roll %s. %s": [
+        "You roll %s. %s"
+    ]
+}
