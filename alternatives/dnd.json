@@ -1,27 +1,34 @@
 {
     "Critical Fail!": [
-        "Critical Fail!"
+        "Critical Fail!",
+        "Steps on a Giant Hole and Bloom"
     ],
     "Critical Hit!": [
-        "Critical Hit!"
+        "Critical Hit!",
+        "And Staaay Down"
     ],
     "Critical Miss!": [
         "Critical Miss!"
     ],
     "Critical Save!": [
-        "Critical Save!"
+        "Critical Save!",
+        "pfff drink Amatoxin like milk"
     ],
     "DM: Read The Freaking PHB": [
-        "DM: Read The Freaking PHB"
+        "DM: Read The Freaking PHB",
+        "THERE ARE RULEZZZZ read...."
     ],
     "DM: You cannot %s": [
         "DM: You cannot %s"
     ],
     "You Fail": [
-        "You Fail"
+        "You Fail",
+        "UPS out... FAIL"
     ],
     "You Hit": [
-        "You Hit"
+        "You Hit",
+        "You hit with a keyboard",
+        "You hit with the mouse"
     ],
     "You Miss": [
         "You Miss"
